@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b172a">
+  <meta name="description" content="A little blue world made with love for Babeh and five beautiful years together.">
+  <title>Babeh's Little World | Five Years Together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="loader" id="loader" aria-live="polite">
+    <div class="loader-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+    <p>Preparing your little world...</p>
+  </div>
+
+  <div class="welcome" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
+    <div class="welcome-glow"></div>
+    <div class="welcome-card glass">
+      <span class="eyebrow"><span class="tiny-star">✦</span> a little world, made for you</span>
+      <h1 id="welcome-title">Hello, <em>Babeh!</em></h1>
+      <p class="welcome-lead">I made a little world just for you.</p>
+      <p class="welcome-copy">A little collection of everything you love, the things that make you smile, and all the little details that make you special.</p>
+      <button class="button button-primary" id="enter-button">Step Inside <span aria-hidden="true">↗</span></button>
+      <div class="welcome-note">made with love, just for us <span>♡</span></div>
+    </div>
+  </div>
+
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="#home" aria-label="Babeh's Little World, home"><span class="wordmark-icon">b.</span><span>your little world</span></a>
+    <nav class="nav-pill glass" aria-label="Main navigation">
+      <a class="nav-link active" href="#home" data-nav="home"><span class="nav-symbol">⌂</span><span>Home</span></a>
+      <a class="nav-link" href="#her-world" data-nav="her-world"><span class="nav-symbol">✧</span><span>Her World</span></a>
+      <a class="nav-link" href="#reasons" data-nav="reasons"><span class="nav-symbol">♡</span><span>Reasons</span></a>
+      <a class="nav-link" href="#favorites" data-nav="favorites"><span class="nav-symbol">☆</span><span>Favorites</span></a>
+      <a class="nav-link" href="#letter" data-nav="letter"><span class="nav-symbol">✉</span><span>For Babeh</span></a>
+    </nav>
+    <a class="header-date" href="#countdown"><span class="date-dot"></span> 04 · 11 · 26</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-line"></span> a little world just for you</span>
+        <h1 id="hero-title">Hello, <em>Babeh!</em></h1>
+        <p class="hero-intro">I made a little world just for you.</p>
+        <p class="hero-detail">A little collection of everything you love, the things that make you smile, and all the little details that make you special.</p>
+        <a href="#her-world" class="button button-primary hero-button">Take a look around <span aria-hidden="true">↓</span></a>
+        <div class="hero-date"><span>five years of us</span><i></i><span>november 4, 2026</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-orbit orbit-one"></div><div class="photo-orbit orbit-two"></div>
+        <div class="hero-photo-card glass">
+          <button class="photo-button" type="button" data-lightbox="assets/images/Couple-Main.jpg" data-title="Five years of us" data-description="A photo of us together, kept close in our little world." aria-label="Open our couple photo">
+            <img class="featured-photo" src="assets/images/Couple-Main.jpg" alt="A photo of us together" fetchpriority="high">
+            <span class="photo-corner" aria-hidden="true">♡</span>
+          </button>
+          <div class="photo-caption"><span><strong>five years of us</strong><small>our little story, together</small></span><span class="caption-heart">♡</span></div>
+        </div>
+        <div class="floating-note glass"><span class="note-spark">✦</span><span>the things that make you<br><strong>so wonderfully you</strong></span></div>
+        <div class="hero-stamp" aria-hidden="true"><span>5</span><small>years<br>together</small></div>
+      </div>
+      <div class="countdown-card glass" id="countdown">
+        <div class="countdown-heading"><span class="eyebrow">a day made for us</span><h2>Our fifth anniversary</h2><p>Counting down to five years of us.</p></div>
+        <div class="countdown" id="countdown-values" aria-label="Time remaining until our anniversary">
+          <div class="time-unit"><strong data-time="days">---</strong><span>days</span></div><b class="time-colon">:</b>
+          <div class="time-unit"><strong data-time="hours">--</strong><span>hours</span></div><b class="time-colon">:</b>
+          <div class="time-unit"><strong data-time="minutes">--</strong><span>minutes</span></div><b class="time-colon">:</b>
+          <div class="time-unit"><strong data-time="seconds">--</strong><span>seconds</span></div>
+        </div>
+        <p class="countdown-date">November 4, 2026</p>
+        <div class="anniversary-message" id="anniversary-message" hidden><span>✦</span><strong>Happy 5th Anniversary, Babeh!</strong><span>♡</span></div>
+      </div>
+      <a class="scroll-cue" href="#her-world"><span></span> scroll to wander</a>
+    </section>
+
+    <section class="section hobbies-section" id="her-world" aria-labelledby="hobbies-title">
+      <div class="section-heading"><span class="eyebrow">the little things you love</span><h2 id="hobbies-title">A peek into <em>your world</em></h2><p>Stories, stitches, fuzzy loops, and sweet creations. A few of the things that make your world yours.</p></div>
+      <div class="hobby-grid" id="hobby-grid"></div>
+    </section>
+
+    <section class="section reasons-section" id="reasons" aria-labelledby="reasons-title">
+      <div class="section-heading"><span class="eyebrow">from my heart to yours</span><h2 id="reasons-title">Three reasons I <em>love you</em></h2><p>Tap a card. There are always more reasons than I can fit here.</p></div>
+      <div class="reason-grid" id="reason-grid"></div>
+      <p class="tap-hint"><span>↻</span> Tap a card to turn it over</p>
+    </section>
+
+    <section class="section favorites-section" id="favorites" aria-labelledby="favorites-title">
+      <div class="section-heading"><span class="eyebrow">little things you love</span><h2 id="favorites-title">Your favorite <em>things</em></h2><p>Pizza, crunchy snacks, something fizzy, and tulips. A few favorites, gathered here for you.</p></div>
+      <div class="favorite-gallery" id="favorite-gallery"></div>
+      <p class="tap-hint"><span>♡</span> Tap a favorite to see it up close</p>
+    </section>
+
+    <section class="letter-section section" id="letter" aria-labelledby="letter-title">
+      <div class="letter-wash"></div>
+      <div class="section-heading"><span class="eyebrow">just between us</span><h2 id="letter-title">A little something <em>for you</em></h2><p>Some things are better expressed from the heart.</p></div>
+      <div class="envelope-wrap">
+        <button class="envelope" id="envelope" aria-label="Open the sealed letter" aria-haspopup="dialog">
+          <span class="envelope-shadow"></span><span class="envelope-paper"><span class="paper-lines"></span></span>
+          <span class="envelope-back"></span><span class="envelope-flap"></span>
+          <span class="envelope-front"></span><span class="seal">♡</span>
+          <span class="envelope-label">for my babeh</span>
+        </button>
+        <p class="tap-hint envelope-hint"><span>✧</span> Tap to open</p>
+      </div>
+    </section>
+
+    <section class="closing-section section" id="closing" aria-labelledby="closing-title">
+      <span class="closing-star star-a">✦</span><span class="closing-star star-b">✧</span><span class="closing-star star-c">✦</span>
+      <div class="closing-content"><span class="eyebrow">and the story goes on</span><h2 id="closing-title">Five years down,<br><em>forever to go.</em></h2><p>Thank you for being part of my story. I hope we keep creating beautiful chapters together.</p><div class="closing-signature">Happy 5th Anniversary, Babeh. <span>♡</span></div><button class="button button-primary" id="back-home">Back to the Beginning <span aria-hidden="true">↑</span></button></div>
+      <div class="closing-footer">made with all my love <span>·</span> 04.11.26</div>
+    </section>
+  </main>
+
+  <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="letter-dialog-title">
+    <button class="dialog-close" id="close-letter" aria-label="Close the letter">×</button>
+    <div class="letter-paper"><span class="letter-kicker">a letter for you</span><h2 id="letter-dialog-title">A note from my heart</h2><div class="letter-body" id="letter-body"></div><span class="letter-signoff">all my love, always <span>♡</span></span></div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer"><button class="lightbox-close" id="close-lightbox" aria-label="Close photo">×</button><img id="lightbox-image" alt=""><div class="lightbox-copy"><h2 id="lightbox-title"></h2><p id="lightbox-description"></p></div></dialog>
+  <div class="heart-layer" id="heart-layer" aria-hidden="true"></div>
+  <footer class="site-footer">A tiny digital love letter <span>♡</span> made for Babeh</footer>
+</body>
+</html>
